@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختيار الشهر</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>اختيار الشهر</h1>
+        <button class="button" onclick="goToPage4(9)">9</button>
+        <button class="button" onclick="goToPage4(10)">10</button>
+        <button class="button" onclick="goToPage4(11)">11</button>
+        <button class="button" onclick="goToPage4(12)">12</button>
+        <button class="button" onclick="goToPage4(1)">1</button>
+        <button class="button" onclick="goToPage4(2)">2</button>
+        <button class="button" onclick="goToPage4(3)">3</button>
+        <button class="button" onclick="goToPage4(4)">4</button>
+        <button class="button" onclick="goToPage4(5)">5</button>
+        <button class="button" onclick="goToPage4(6)">6</button>
+        <br><br>
+        <button class="button" onclick="goBack()">الرجوع</button>
+    </div>
+
+    <script>
+        function goToPage4(month) {
+            window.location.href = `page4.html?month=${month}`;
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
